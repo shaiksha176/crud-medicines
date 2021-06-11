@@ -1,0 +1,23 @@
+CREATE DATABASE dosagetracker;
+
+CREATE TABLE users (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE medicines (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255),
+    frequency varchar(255),
+    dosage varchar(255),
+    PRIMARY KEY (id),
+    user_id int,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+INSERT INTO users( name, email, password) VALUES ('watson','watson@bbc.com','123456789'),('sherlock','watson@bbc.com','123456789');
+
+INSERT INTO medicines( name, frequency, dosage, user_id) VALUES ('pfizer','5', '2',1),('covaxin','5', '2',1);
