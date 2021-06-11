@@ -1,0 +1,113 @@
+.add-container {
+  width: 500px;
+  margin: 60px auto;
+  /* border: 1px solid #000849; */
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: whitesmoke; */
+  /* box-shadow: 0 2px 4px rgba(126, 95, 95, 0.8); */
+}
+
+.add-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--primary-color-bright);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+form div {
+  position: relative;
+}
+
+form div img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+form div input {
+  width: 100%;
+  color: var(--text-color) !important;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  font-size: 1.12rem;
+  border: 1px solid rgba(0, 0, 0, 0.397) !important;
+  border-radius: 2px;
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+.input:focus {
+  border: 1px solid var(--primary-color-dark);
+}
+
+form div .error-message {
+  margin-bottom: 10px;
+  color: rgba(182, 12, 12, 0.548);
+}
+
+.show-pwd {
+  position: absolute;
+  right: 6px;
+  top: 15px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #3f4044;
+}
+#forgot-password {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000849;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+#coins {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#coins td,
+#coins th {
+  /* border: 1px solid #ddd; */
+  padding: 12px;
+}
+
+#coins th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: var(--text-color);
+  border-top: 6px solid var(--alternate-color);
+  opacity: 0.92;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .add-container {
+    width: 99%;
+    margin: 30px auto;
+  }
+  #coins {
+    width: 99%;
+    margin: 0 auto;
+  }
+}

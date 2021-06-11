@@ -1,0 +1,16 @@
+.update-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.update-container h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .update-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
